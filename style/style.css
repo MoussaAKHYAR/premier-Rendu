@@ -1,16 +1,23 @@
-*{
+body{
+  background-image:/*linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),*/ url("../img/2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman';
-}
-body{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/2.jpg");
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: cover;
+  text-align: center;
 }
 header{
-  width: 90%;
+  margin-left: 30px;
+  margin-right: 92px;
+}
+.one{
+  /*position: relative;*/
+  margin-bottom: 120px;
+  width: 86.2%;
+  border: none;
+  height: 2px;
+  background:rgb(168, 11, 97) ;
 }
 ul{
   float: right;
@@ -43,41 +50,66 @@ ul li.active a{
   padding: 5px 20px;
   color: rgb(168, 11, 97);
 }
-.title{
+/*.title{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
+}*/
 .title h1{
   color: rgb(168, 11, 97);
   font-size: 50px;
+  margin-bottom: 80px;
+  /*text-align: center;*/
 }
-.button{
-  position: absolute;
+.btn{
+  /*position: absolute;
   top: 95%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
-.btn{
   border: 2px solid rgb(168, 11, 97);
   border-radius: 20px 20px 20px 20px;
   padding: 10px 30px;
   color: rgb(168, 11, 97);
   text-decoration: none;
+  transition: 0.6s ease;*/
+  background-color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid rgb(168, 11, 97);
+  border-radius: 20px 20px 20px 20px;
+  color: rgb(168, 11, 97);
+  text-decoration: none;
   transition: 0.6s ease;
+  padding: 10px 30px;
+  margin-top:60px ;
+
 }
+
 .btn:hover{
   background-color: blueviolet;
   color: #ffffff;
 }
-hr.one{
-  position: relative;
-  top: 35px;
-  margin:53px ;
-  width: 86%;
-  border: none;
-  height: 2px;
-  background:rgb(168, 11, 97) ;
-}
 
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.container img{
+  overflow: auto;
+}
+.main h1{
+  text-transform : uppercase;
+}
+.main h3{
+  font-weight: lighter;
+}
+.two{
+  border-color: blueviolet;
+}
+.main {
+  margin-right: 120px;
+  margin-left: 120px;
+}
